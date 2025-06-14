@@ -87,17 +87,3 @@ MangueBaja_TCU/
 -   **`BAJA_DEFS/rear_defs.h`**: Contém definições e constantes físicas específicas para os cálculos realizados na TCU. Isso inclui o diâmetro da roda, o número de furos do disco sensor, valores de resistores do divisor de tensão e as larguras de pulso do servomotor para cada modo de operação.
 
 -   **`BAJA_DEFS/FIR.h`**: Contém a implementação da classe `FIR` para filtragem de sinais, com métodos para realizar a convolução e atualizar o histórico de amostras do filtro.
-
-## Compilação e Deploy
-
-O projeto é compilado e implantado utilizando o Mbed CLI.
-
-1.  **Instalação**: É necessário ter o [Mbed CLI](https://os.mbed.com/docs/mbed-os/v6.15/build-tools/mbed-cli-1.html) instalado.
-2.  **Compilação**:
-    ```bash
-    mbed compile -m NUCLEO_F103RB -t GCC_ARM
-    ```
-3.  **Deploy**:
-    -   Conecte a placa NUCLEO ao computador.
-    -   Arraste o arquivo `.bin` gerado (localizado no diretório `BUILD/`) para a unidade de armazenamento da NUCLEO.
-    -   A placa será reiniciada automaticamente com o novo firmware.
